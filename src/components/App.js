@@ -11,13 +11,9 @@ function App() {
 
 	return (
 		<div className={'App ' + (isDarkMode ? 'dark' : 'light')}>
-			<Header
-				isDarkMode={isDarkMode}
-				onDarkModeClick={handleDarkModeClick}
-			/>
+			<Header isDarkMode={isDarkMode} onDarkModeClick={handleDarkModeClick} />
 			<ShoppingList />
 		</div>
-	)
-}
+)}
 
 export default App
